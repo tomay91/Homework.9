@@ -10,6 +10,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 function promptUser() {
     return inquirer.prompt([
+    
     {
         type: "input",
         message: "What is your Github username?",
@@ -30,7 +31,16 @@ function promptUser() {
         message: "What is your repository name?",
         name: "repository",
     } 
-    ]
-
-
+ ]);
 }
+
+async function init() {
+    try {
+        const answers = await promptUser();
+        const readme = generateMarkdown(answers);
+        await writeFileAsync ("readme.md", readme);
+        console.log ("Successfully wrote to readme.md");
+    }
+    catch (err) {
+        console.log(err)
+    }
