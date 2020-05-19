@@ -5,7 +5,7 @@
 
 ## Description
 
-undefined
+To Generate a ReadMe using Node
 
 ## Table of Contents
   -Installation
@@ -23,7 +23,7 @@ undefined
 ## Usage
 
 This is what the user needs to understand the repo:
-undefined
+Homework.9
 
 ## Licence
 
@@ -33,7 +33,7 @@ undefined
 ## Contributing
 
 This is how the user can contribute to the project:
-undefined
+None
 
 ## Tests
 

@@ -21,19 +21,21 @@ function promptUser() {
           },
           {
             type: "input",
-            name: "project",
+            name: "description",
             message: "Give a description of your project?",
           },
           {
             type: "input",
-            name: "repository",
+            name: "usage",
             message: "What is your repository name?"
           },
+          
           {
             type: "input",
-            name: "email",
-            message: "What is your email?"
+            name: "contribute",
+            message: "Who are the other contributers to the project??"
           }
+         
         ]);
       }   
     
